@@ -91,7 +91,7 @@ trump_tweets_sentiment_per_twoMonths <- trump_tweets_words %>%
 df <- as.data.frame(trump_tweets_sentiment_per_twoMonths)
 
 # Get Barplot
-png('Twitter-Sentimental-Analysis-@realdonaldtrump', width = 14, height = 6, units = 'in', res = 600)
+png('Twitter-Sentimental-Analysis-@realdonaldtrump.png', width = 14, height = 6, units = 'in', res = 600)
 par(mar= c(5,5,4,1) + 0,1)
 bar1 <- barplot(df$mean_sentiment_score, 
                 names.arg=df$dategroup,
